@@ -13,11 +13,11 @@
         $preco      =$_GET['p'];
         $preco2     =$preco;
         $porcent    =$_GET['x'];
-        echo "O valor original é R$ ". number_format($preco,2,'.');
+        echo "O valor original é R$ ". number_format($preco,2);
       
         //$preco = $preco + ($preco * $porcent/100);
         $preco += ($preco * $porcent/100); 
-        echo "<br /> Com acréscimo de ". $porcent."% o preço final é R$".number_format($preco,2,'.');
+        echo "<br /> Com acréscimo de ". $porcent."% o preço final é R$".number_format($preco,2);
         
         $preco2 -= ($preco2 * $porcent/100);
         echo "<br />Com desconto de ".$porcent."% o preço final é R$".number_format($preco2,2,'.');
